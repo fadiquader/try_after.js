@@ -23,8 +23,7 @@ server
         // Anything else you add here will be made available
         // within getInitialProps(ctx)
         // e.g a redux store...
-        customThing: 'thing',
-        preloadState: store.getState()
+        __PRELOADED_STATE__: store.getState(),
       });
       res.send(html);
     } catch (error) {

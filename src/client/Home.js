@@ -5,8 +5,8 @@ import logo from './react.svg';
 import './Home.css';
 
 class Home extends React.Component {
-  static async getInitialProps({ req, res, match, preloadState}) {
-    console.log('preloadState ', preloadState)
+  static async getInitialProps({ req, res, match}) {
+    // console.log('store ', store)
     return {  };
   }
   render() {
